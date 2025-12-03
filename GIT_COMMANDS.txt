@@ -1,0 +1,19 @@
+Step-1: git init
+Step-2: git add .
+Step-3: git commit -m "Message"
+Step-4: git remote add origin <remote URL>
+Step-5: gt push origin main/master
+Step-6: Check in Repo
+------------------------------------------------------------
+
+If you add any files, or perform any modifications:
+
+git status
+git add .
+git commit -m "xxxx"
+git push origin master/main
+-------------------------------------------------------------
+
+If you want to retrieve the remote repo to local PC 
+
+git clone <remote URL>
