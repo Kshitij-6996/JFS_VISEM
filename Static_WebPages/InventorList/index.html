@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Creators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Creators of Programming Languages</h1>
+        
+        <div class="content">
+            <div class="selector-section">
+                <label for="creatorSelect">Select a Creator:</label>
+                <select id="creatorSelect">
+                    <option value="">-- Choose a Creator --</option>
+                    <option value="guido">Guido van Rossum (Python)</option>
+                    <option value="bjarne">Bjarne Stroustrup (C++)</option>
+                    <option value="dennis">Dennis Ritchie (C)</option>
+                    <option value="james">James Gosling (Java)</option>
+                    <option value="brendan">Brendan Eich (JavaScript)</option>
+                    <option value="graydon">Graydon Hoare (Rust)</option>
+                </select>
+            </div>
+
+            <div class="creator-card" id="creatorCard" style="display: none;">
+    <div class="image-container">
+        <img id="creatorImage" src="" alt="Creator" class="creator-image">
+    </div>
+    <div class="info-section">
+        <h2 id="creatorName"></h2>
+        <p id="creatorSummary"></p>
+    </div>
+</div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
