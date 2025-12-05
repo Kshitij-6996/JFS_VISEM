@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const subjectsList = selected
-      .map((box) => {
+      .map((box, index) => {
         const label = form.querySelector(`label[for="${box.id}"]`);
-        return label ? label.textContent : "";
+        return label ? `${index + 1}. ${label.textContent}` : "";
       })
       .filter(Boolean)
       .join("\n");
@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("displayName").textContent = studentName;
     document.getElementById("displaySubjects").textContent = subjectsList;
     document.getElementById("displayTotal").textContent = totalAmount.textContent;
-    document.getElementById("registrationDetails").style.display = "block";
+    document.getElementById("registrationDetails").style.display = "block"; 
   });
 });
